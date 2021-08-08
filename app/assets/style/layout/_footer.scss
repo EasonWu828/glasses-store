@@ -1,0 +1,140 @@
+.footer {
+  background: $bg-primary;
+  padding: 32px 0 40px 0;
+  color: $text-secondary;
+  .footer-items-link li {
+    margin-right: 48px;
+    a {
+      color: $text-secondary;
+    }
+  }
+  .footer-items-icons li {
+    margin-left: 32px;
+  }
+  .footer-items-contact {
+    width: 100%;
+    border-bottom: 1px solid $text-secondary;
+    padding-top: 42px;
+    margin-bottom: 32px;
+    li {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      a {
+        font-size: $font-size-4xl;
+        color: $text-secondary;
+      }
+    }
+    .tel-text {
+      margin-bottom: 16px;
+      img {
+        margin-right: 22px;
+      }
+    }
+    .mail-text {
+      margin-bottom: 24px;
+      img {
+        margin-right: 20px;
+        width: 40px;
+        height: 32px;
+      }
+    }
+  }
+  .footer-items-text {
+    width: 100%;
+    .terms {
+      font-size: $font-size-s;
+      color: $text-secondary;
+      li a {
+        color: $text-secondary;
+      }
+      .privacy {
+        margin-right: 48px;
+      }
+    }
+  }
+}
+
+@include pad {
+  .footer {
+    padding: 32px 39px;
+    .footer-items-link li {
+      margin-right: 40px;
+    }
+    .footer-items-icons li {
+      margin-left: 24px;
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    .footer-items-contact {
+      padding-top: 28px;
+      margin-bottom: 24px;
+      .tel-text {
+        margin-bottom: 12px;
+      }
+      .mail-text {
+        margin-bottom: 20px;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      img {
+        width: 20px;
+        height: 20px;
+      }
+      li a {
+        font-size: $font-size-l;
+      }
+    }
+    .privacy {
+      margin-right: 24px;
+    }
+  }
+}
+
+@include mobile {
+  .footer {
+    padding: 25px 15px;
+    .footer-items-link {
+      display: none;
+    }
+    .footer-items-icons {
+      position: absolute;
+      right: 15px;
+    }
+    .footer-items-contact {
+      padding: 0;
+      margin-bottom: 16px;
+      .tel-text img {
+        width: 15px;
+        height: 15px;
+        margin-right: 6px;
+      }
+      .mail-text img {
+        width: 15px;
+        height: 15px;
+        margin-right: 6px;
+      }
+      li a {
+        font-size: $font-size-primary;
+        margin-bottom: 6px;
+      }
+    }
+    .footer-items-text {
+      flex-wrap: wrap;
+      .copyright {
+        margin-bottom: 8px;
+      }
+      .terms {
+        flex-direction: column;
+        font-size: $font-size-s;
+        .privacy {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}

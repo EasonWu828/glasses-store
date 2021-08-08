@@ -1,0 +1,7 @@
+/* 資料庫 */
+/* 圖片取代文字 */
+@mixin text-hide {
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}

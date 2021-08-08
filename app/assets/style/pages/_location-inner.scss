@@ -1,0 +1,129 @@
+.location-inner-content {
+  padding: 96px 0 160px 0;
+  .location-inner-title {
+    border-left: 8px solid $border-title;
+    font-size: $font-size-5xl;
+    margin-bottom: 65px;
+    padding-left: 16px;
+  }
+  .location-inner-select {
+    margin-bottom: 32px;
+    label {
+      font-size: $font-size-xl;
+      margin-right: 22px;
+    }
+    select {
+      font-size: $font-size-m;
+      width: 30%;
+      padding: 8px 16px;
+      outline: 1px solid $outline;
+      color: $gray;
+    }
+  }
+  .location-store {
+    margin-right: 30px;
+    .location-store-text ul,
+    a {
+      color: $dark;
+    }
+    .location-store-title {
+      border: 1px solid $border;
+      font-size: $font-size-xl;
+      padding: 12px 0 12px 24px;
+    }
+    .inner-text {
+      font-size: $font-size-l;
+      border: 1px solid $border;
+      padding: 16px 27px 16px 27px;
+      .location-store-icons {
+        width: 18px;
+        height: 18px;
+        margin-right: 11px;
+      }
+    }
+  }
+}
+
+@include pad {
+  .location-inner-content {
+    padding: 60px 39px 96px 39px;
+    .location-inner-title {
+      margin-bottom: 40px;
+      border-left: 4px solid $border-title;
+    }
+    .location-inner-select {
+      margin-bottom: 24px;
+      label {
+        font-size: $font-size-primary;
+        margin-right: 20px;
+      }
+      select {
+        font-size: $font-size-m;
+        padding: 8px 10px;
+      }
+    }
+    .location-info {
+      flex-direction: column;
+      align-items: center;
+      max-width: 100%;
+      .location-store {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        margin-bottom: 32px;
+        .location-store-img {
+          width: 48%;
+          margin-right: 30px;
+        }
+        .location-store-text {
+          width: 52%;
+          .location-store-title {
+            font-size: $font-size-primary;
+          }
+          .inner-text {
+            font-size: $font-size-s;
+            padding: 16px 20px;
+          }
+        }
+      }
+      .location-map {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .location-inner-content {
+    padding: 28px 15px 56px 15px;
+    .location-inner-title {
+      font-size: $font-size-2xl;
+      margin-bottom: 24px;
+    }
+    .location-inner-select {
+      align-items: center;
+      margin-bottom: 20px;
+      label {
+        font-size: $font-size-s;
+      }
+      select {
+        font-size: $font-size-s;
+        width: 75%;
+        padding: 8px 10px;
+      }
+    }
+    .location-info {
+      .location-store {
+        flex-direction: column;
+        margin-bottom: 16px;
+        .location-store-img {
+          width: 100%;
+          margin: 0;
+        }
+        .location-store-text {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
